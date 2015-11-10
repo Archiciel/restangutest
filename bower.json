@@ -24,6 +24,7 @@
   ],
   "dependencies": {
     "angular": "1.2.29",
-    "restangular": "1.5.1"
+    "restangular": "1.5.1",
+    "angular-ui-router": "0.2.15"
   }
 }
