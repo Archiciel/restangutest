@@ -13,7 +13,10 @@ WORKDIR /app
 RUN git clone https://github.com/Archiciel/restangutest
 
 WORKDIR restangutest
+RUN npm install bower
 RUN npm install --production
+RUN bower install
+RUN npm uninstall bower
 
 EXPOSE 3000
 
