@@ -16,7 +16,7 @@ WORKDIR restangutest
 RUN npm install -g bower
 RUN npm install --production
 RUN bower install --allow-root
-RUN npm uninstall bower
+RUN npm uninstall -g bower
 
 EXPOSE 3000
 
