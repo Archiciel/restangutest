@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <div ng-controller="restAngCtrl">
+        <p>Good users</p>
+        <ul>
+            <li ng-repeat="user in goodUsers">
+                {{user.name}}
+            </li>
+        </ul>
+    </div>
+
+    <script src="angular/angular.min.js"></script>
+    <script src="lodash/lodash.js"></script>
+    <script src="restangular/dist/restangular.js"></script>
+    <script src="javascripts/app.module.js"></script>
+  </body>
+</html>
