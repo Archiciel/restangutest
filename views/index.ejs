@@ -22,8 +22,14 @@
             </li>
         </ul>
     </div>
+    <div ng-controller="socketCtrl">
+        <h2>{{state}}</h2>
+        <a href="#" ng-click="onClick()">Click me harder !</a>
+    </div>
     <script src="angular/angular.min.js"></script>
     <script src="lodash/lodash.js"></script>
+    <script src="socket.io-client/socket.io.js"></script>
+    <script src="angular-socket-io/socket.js"></script>
     <script src="restangular/dist/restangular.js"></script>
     <script src="angular-ui-router/release/angular-ui-router.js"></script>
     <script src="javascripts/app.module.js"></script>
